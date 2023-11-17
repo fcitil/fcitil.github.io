@@ -2562,7 +2562,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
 
 .text-right { text-align: right !important; }
 
-.text-center { text-align: center !important; }
+.text-align: left { text-align: left !important; }
 
 @media (min-width: 576px) { .text-sm-left { text-align: left !important; }
   .text-sm-right { text-align: right !important; }
@@ -5169,7 +5169,7 @@ body.scrollable { overflow-y: auto; }
   .modal .modal-full-height.modal-top { bottom: auto; }
   .modal .modal-full-height.modal-bottom { min-height: 0; top: auto; }
   .modal .modal-full-height .modal-content { width: 100%; }
-  .modal .modal-full-height.modal-lg { width: 90%; max-width: 90%; } }
+  .modal .modal-full-height.modal-lg { width: 110%; max-width: 110%; } }
 @media (min-width: 992px) and (min-width: 992px) { .modal .modal-full-height.modal-lg { width: 800px; max-width: 800px; } }
 @media (min-width: 992px) and (min-width: 1200px) { .modal .modal-full-height.modal-lg { width: 1000px; max-width: 1000px; } }
 @media (min-width: 992px) { .modal .modal-side { position: absolute; bottom: 10px; right: 10px; margin: 0; width: 400px; } }
@@ -7982,7 +7982,7 @@ body.scrollable { overflow-y: auto; }
   .modal .modal-full-height.modal-top { bottom: auto; }
   .modal .modal-full-height.modal-bottom { min-height: 0; top: auto; }
   .modal .modal-full-height .modal-content { width: 100%; }
-  .modal .modal-full-height.modal-lg { width: 90%; max-width: 90%; } }
+  .modal .modal-full-height.modal-lg { width: 110%; max-width: 110%; } }
 @media (min-width: 992px) and (min-width: 992px) { .modal .modal-full-height.modal-lg { width: 800px; max-width: 800px; } }
 @media (min-width: 992px) and (min-width: 1200px) { .modal .modal-full-height.modal-lg { width: 1000px; max-width: 1000px; } }
 @media (min-width: 992px) { .modal .modal-side { position: absolute; bottom: 10px; right: 10px; margin: 0; width: 400px; } }
@@ -10795,7 +10795,7 @@ body.scrollable { overflow-y: auto; }
   .modal .modal-full-height.modal-top { bottom: auto; }
   .modal .modal-full-height.modal-bottom { min-height: 0; top: auto; }
   .modal .modal-full-height .modal-content { width: 100%; }
-  .modal .modal-full-height.modal-lg { width: 90%; max-width: 90%; } }
+  .modal .modal-full-height.modal-lg { width: 110%; max-width: 110%; } }
 @media (min-width: 992px) and (min-width: 992px) { .modal .modal-full-height.modal-lg { width: 800px; max-width: 800px; } }
 @media (min-width: 992px) and (min-width: 1200px) { .modal .modal-full-height.modal-lg { width: 1000px; max-width: 1000px; } }
 @media (min-width: 992px) { .modal .modal-side { position: absolute; bottom: 10px; right: 10px; margin: 0; width: 400px; } }
@@ -11161,6 +11161,10 @@ a:hover { text-decoration: none; }
 
 .li-icon { background: #0e76a8; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
 .li-icon:hover { background: #2eb0ee; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+
+.ka-icon { background: #20beff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
+.ka-icon:hover { background: #63d1ff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+
 
 .fb-icon { background: #3b5998; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
 .fb-icon:hover { background: #718dc8; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
@@ -13740,7 +13744,7 @@ body.scrollable { overflow-y: auto; }
   .modal .modal-full-height.modal-top { bottom: auto; }
   .modal .modal-full-height.modal-bottom { min-height: 0; top: auto; }
   .modal .modal-full-height .modal-content { width: 100%; }
-  .modal .modal-full-height.modal-lg { width: 90%; max-width: 90%; } }
+  .modal .modal-full-height.modal-lg { width: 110%; max-width: 110%; } }
 @media (min-width: 992px) and (min-width: 992px) { .modal .modal-full-height.modal-lg { width: 800px; max-width: 800px; } }
 @media (min-width: 992px) and (min-width: 1200px) { .modal .modal-full-height.modal-lg { width: 1000px; max-width: 1000px; } }
 @media (min-width: 992px) { .modal .modal-side { position: absolute; bottom: 10px; right: 10px; margin: 0; width: 400px; } }
