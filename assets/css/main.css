@@ -11162,6 +11162,10 @@ a:hover { text-decoration: none; }
 .li-icon { background: #0e76a8; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
 .li-icon:hover { background: #2eb0ee; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
 
+.ka-icon { background: #20beff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
+.ka-icon:hover { background: #63d1ff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+
+
 .fb-icon { background: #3b5998; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: initial; }
 .fb-icon:hover { background: #718dc8; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
 
