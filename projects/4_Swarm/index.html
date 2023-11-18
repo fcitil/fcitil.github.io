@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Furkan Çitil | Amused</title>
+  <title>Furkan Çitil | Knowledge Proliferation in Academic Documents</title>
   <meta name="description" content="Personal website of Furkan Çitil.">
 
   <!-- Fonts and Icons -->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/news/amused/">
+  <link rel="canonical" href="/projects/1_keyphrase/">
 </head>
 <body>
   <!-- Header -->
@@ -61,8 +61,7 @@
 
             
           
-          
-            
+        
           
             
           
@@ -81,11 +80,21 @@
   <!-- Content -->
   <div class="content">
     
-  <h1>Amused</h1>
-  <h6></h6>
+  <h1>Knowledge Proliferation in Academic Documents</h1>
+  <h6>Understand important concepts in academic documents and link them to authors, publications, and each other. My work focuses on understanding important keyphrases in research articles.</h6>
 
 
-<p>Our work on  <a href="https://arxiv.org/abs/1912.10160/">A Multistream Vector Representation for use in Natural Dialog</a> was accepted for poster presentation at LREC 2020.</p>
+<p><br /></p>
+
+<p>To understand knowledge proliferation, we first need to understand what are important keyphrases in research documents. In the past, all work in keyphrase extraction is based on ideas derived from information theory - something is important if it is uncertain in a particular context, given some background knowledge. We look at importance from a completely different perspective, which is based on the <b>impact on downstream applications</b>.</p>
+
+<p><br /></p>
+
+<h3 id="method">Method</h3>
+
+<p><br /></p>
+
+<p>We extract candidate phrases from a research article, which is the set of all noun phrases. We then train a model to perform auxiliary tasks like Topic Prediction, Open Review User Keywords Prediction, Summarization and Representation Learning to learn importance attribution. We then use the influence scores to rerank keyphrases. The main idea is that a phrase is <i>important</i> if it influences a downstream task’s prediction.</p>
 
 
   </div>
