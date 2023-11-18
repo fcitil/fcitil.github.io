@@ -127,7 +127,7 @@ pre > code {
 }
 
 .page-title {
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -137,7 +137,7 @@ pre > code {
 
 .desc {
   padding: 1em 0;
-  text-align: center;
+  text-align: left;
 }
 .maindesc {
   font-size: 30px;
@@ -159,13 +159,13 @@ pre > code {
   max-width: 720px;
 }
 .used-by {
-  text-align: center;
+  text-align: left;
   position: relative;
   padding: 1em 0;
 }
 .used-by-label {
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
 }
 .used-by img {
@@ -190,7 +190,7 @@ pre > code {
 }
 
 .footer {
-  text-align: center;
+  text-align: left;
   color: #777;
 }
 .footer a {

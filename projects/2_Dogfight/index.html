@@ -98,7 +98,7 @@
 <p>In this project, I was responsible for the development of whole image processing pipeline including camera, and onboard embedded computer selection, development of a hybrid algorithm that fuses object tracking and detection algorithms, especially the tracking part, and deployment of these algorithms to embedded computer.</p>
 <p>For real time guidance, image processing algorithms are required so that the rival UAV would be located on the onboard camera with respect to our UAV. Image processing algorithm consists of two parts, object detection and object tracking respectively. Once the rival UAV is detected and localized with an object detection algorithm, its output is fed into the object tracking algorithm. Then, the object tracking algorithm tracks the rival UAV until N frame passes if the tracking algorithm work in an confidence interval. Object detection and object tracking algorithms work successively in a way that they enhance the deficiency of each other as in the figure below and for each frame, error vector corresponding to the distance between centre of the bounding box and the centre of the image, is fed to the controller. Benchmark tests of multiple state of art algorithms are investigated during the literature research to find most appropriate algorithms for our case.</p>
 <p><br /></p>
-<div style="text-align: center;">
+<div style="text-align: left;">
   <img src="/assets/img/DogFighterUAV/psudo.jpg" alt="Image 1" style="width: 75%; margin: 0 auto;">
 </div>
 <p><br /></p>

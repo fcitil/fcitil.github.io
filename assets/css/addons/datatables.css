@@ -70,7 +70,7 @@ div.dataTables_wrapper div.dataTables_paginate {
   div.dataTables_wrapper div .dataTables_filter,
   div.dataTables_wrapper div .dataTables_info,
   div.dataTables_wrapper div .dataTables_paginate ul.pagination {
-    text-align: center;
+    text-align: left;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
