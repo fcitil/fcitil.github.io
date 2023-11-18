@@ -2562,7 +2562,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
 
 .text-right { text-align: right !important; }
 
-.text-center { text-align: center !important; }
+.text-align: left { text-align: left !important; }
 
 @media (min-width: 576px) { .text-sm-left { text-align: left !important; }
   .text-sm-right { text-align: right !important; }
