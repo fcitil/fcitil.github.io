@@ -78,7 +78,7 @@ svg:not(:root).svg-inline--fa {
   display: inline-block;
   height: 1em;
   position: relative;
-  text-align: left;
+  text-align: center;
   vertical-align: -.125em;
   width: 1em; }
   .fa-layers svg.svg-inline--fa {
@@ -88,7 +88,7 @@ svg:not(:root).svg-inline--fa {
 .fa-layers-text, .fa-layers-counter {
   display: inline-block;
   position: absolute;
-  text-align: left; }
+  text-align: center; }
 
 .fa-layers-text {
   left: 50%;
@@ -196,7 +196,7 @@ svg:not(:root).svg-inline--fa {
   font-size: 10em; }
 
 .fa-fw {
-  text-align: left;
+  text-align: center;
   width: 1.25em; }
 
 .fa-ul {
@@ -209,7 +209,7 @@ svg:not(:root).svg-inline--fa {
 .fa-li {
   left: -2em;
   position: absolute;
-  text-align: left;
+  text-align: center;
   width: 2em;
   line-height: inherit; }
 
