@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ5EBTD9EJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GJ5EBTD9EJ');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Furkan Çitil | Dogfighter UAV  </title>
+  <title>Furkan Çitil | Dogfighter UAV </title>
   <meta name="description" content="Personal website of Furkan Çitil.">
 
   <!-- Fonts and Icons -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="/assets/css/all.min.css">
@@ -16,14 +27,16 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="canonical" href="/projects/2_dialograph/">
 </head>
+
 <body>
   <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
     <div class="container-fluid p-0">
-      
-        <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Furkan</span> Çitil</a>
-      
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Furkan</span> Çitil</a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-right" id="navbarNav">
@@ -31,40 +44,40 @@
           <li class="nav-item ">
             <a class="nav-link" href="/">
               About
-              
+
             </a>
           </li>
-          
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="/cv/">
-                    Resume
-                    
-                  </a>
-              </li>
-            
-          
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="/projects/">
-                    Projects
-                    
-                  </a>
-              </li>
-            
-          
-      
-            
-          
-          
-            
-          
-            
-          
+
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/cv/">
+              Resume
+
+            </a>
+          </li>
+
+
+
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              Projects
+
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+
+
         </ul>
       </div>
     </div>
@@ -79,48 +92,73 @@
 
   <!-- Content -->
   <div class="content">
-    
-  <h1>Dogfighter UAV</h1>
-  <h6>As an undergraduate project, our team has designed and developed a dogfighting UAV system that is capable of identifying and tracking rival UAVs in the air. The main objective of this system is to provide a cost-effective solution for UAV surveillance and defense. The system relies on data analysis and guidance algorithms to select a target, approach it for visual contact, and pursue it with visual guidance.  </h6>
+
+    <h1>Dogfighter UAV</h1>
+    <h6>As an undergraduate project, our team has designed and developed a dogfighting UAV system that is capable of
+      identifying and tracking rival UAVs in the air. The main objective of this system is to provide a cost-effective
+      solution for UAV surveillance and defense. The system relies on data analysis and guidance algorithms to select a
+      target, approach it for visual contact, and pursue it with visual guidance. </h6>
 
 
-<p><br /></p>
+    <p><br /></p>
 
-<h4 id="keywords">Keywords</h4>
-<p>fixed-wing UAV design; target optimization; autonomous dogfight; UAV tracking; visual guidance</p>
+    <h4 id="keywords">Keywords</h4>
+    <p>fixed-wing UAV design; target optimization; autonomous dogfight; UAV tracking; visual guidance</p>
 
-<p><br /></p>
+    <p><br /></p>
 
-<h2 id="abstract">Abstract</h2>
+    <h2 id="abstract">Abstract</h2>
 
-<p><br /></p>
+    <p><br /></p>
 
-<p>In this project, I was responsible for the development of whole image processing pipeline including camera, and onboard embedded computer selection, development of a hybrid algorithm that fuses object tracking and detection algorithms, especially the tracking part, and deployment of these algorithms to embedded computer.</p>
-<p>For real time guidance, image processing algorithms are required so that the rival UAV would be located on the onboard camera with respect to our UAV. Image processing algorithm consists of two parts, object detection and object tracking respectively. Once the rival UAV is detected and localized with an object detection algorithm, its output is fed into the object tracking algorithm. Then, the object tracking algorithm tracks the rival UAV until N frame passes if the tracking algorithm work in an confidence interval. Object detection and object tracking algorithms work successively in a way that they enhance the deficiency of each other as in the figure below and for each frame, error vector corresponding to the distance between centre of the bounding box and the centre of the image, is fed to the controller. Benchmark tests of multiple state of art algorithms are investigated during the literature research to find most appropriate algorithms for our case.</p>
-<p><br /></p>
-<div style="text-align: center;">
-  <img src="/assets/img/DogFighterUAV/psudo.jpg" alt="Image 1" style="width: 75%; margin: 0 auto;">
-</div>
-<p><br /></p>
-<p>The composition of detection and tracking algorithms allows us to perform image processing tasks with an higher accuracy on an onboard computer in for an airborne guidance system, which is essential for an agile system, because tracking algorithms mostly outperform detection algorithms in illumination, fast motion and small object related problems and detection algorithms eliminates the drifting problem of the tracking algorithms. Therefore, continuous tracking is achieved by setting initial state by the detection algorithm and the object is tracked in the following N frames if the tracking performance is better than a threshold value. Moreover, as a design parameter, the image processing algorithm architecture is designed to be run on an onboard computer because real-time control with low latency can be achieved and a more agile system can be obtained in this way. Also, a computer on a ground control station is considered to process the image, but this option comes with delays during data transfer between Ground Control Station(GCS) and the UAV. Therefore, image processing algorithms that can run on onboard embedded computers are researched.</p>
-<p>The code for the image processing part of this project can be found in this
-  <a href="https://github.com/fcitil/Airborne-UAV-Detection/">repo</a>. Also the Dogfighter UAV and the demo of the image-processing algorithm can be found below:</p>
+    <p>In this project, I was responsible for the development of whole image processing pipeline including camera, and
+      onboard embedded computer selection, development of a hybrid algorithm that fuses object tracking and detection
+      algorithms, especially the tracking part, and deployment of these algorithms to embedded computer.</p>
+    <p>For real time guidance, image processing algorithms are required so that the rival UAV would be located on the
+      onboard camera with respect to our UAV. Image processing algorithm consists of two parts, object detection and
+      object tracking respectively. Once the rival UAV is detected and localized with an object detection algorithm, its
+      output is fed into the object tracking algorithm. Then, the object tracking algorithm tracks the rival UAV until N
+      frame passes if the tracking algorithm work in an confidence interval. Object detection and object tracking
+      algorithms work successively in a way that they enhance the deficiency of each other as in the figure below and
+      for each frame, error vector corresponding to the distance between centre of the bounding box and the centre of
+      the image, is fed to the controller. Benchmark tests of multiple state of art algorithms are investigated during
+      the literature research to find most appropriate algorithms for our case.</p>
+    <p><br /></p>
+    <div style="text-align: center;">
+      <img src="/assets/img/DogFighterUAV/psudo.jpg" alt="Image 1" style="width: 75%; margin: 0 auto;">
+    </div>
+    <p><br /></p>
+    <p>The composition of detection and tracking algorithms allows us to perform image processing tasks with an higher
+      accuracy on an onboard computer in for an airborne guidance system, which is essential for an agile system,
+      because tracking algorithms mostly outperform detection algorithms in illumination, fast motion and small object
+      related problems and detection algorithms eliminates the drifting problem of the tracking algorithms. Therefore,
+      continuous tracking is achieved by setting initial state by the detection algorithm and the object is tracked in
+      the following N frames if the tracking performance is better than a threshold value. Moreover, as a design
+      parameter, the image processing algorithm architecture is designed to be run on an onboard computer because
+      real-time control with low latency can be achieved and a more agile system can be obtained in this way. Also, a
+      computer on a ground control station is considered to process the image, but this option comes with delays during
+      data transfer between Ground Control Station(GCS) and the UAV. Therefore, image processing algorithms that can run
+      on onboard embedded computers are researched.</p>
+    <p>The code for the image processing part of this project can be found in this
+      <a href="https://github.com/fcitil/Airborne-UAV-Detection/">repo</a>. Also the Dogfighter UAV and the demo of the
+      image-processing algorithm can be found below:
+    </p>
 
-  <div style="display: flex; justify-content: center;">
-    <img src="/assets/img/DogFighterUAV/flight1.PNG" alt="Image 1" style="width: 45%; margin-right: 3.33%;">
-    <img src="/assets/img/DogFighterUAV/fligth2.gif" alt="Image 2" style="width: 45%;">
-  </div>
-  <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <img src="/assets/img/DogFighterUAV/UAV_tracking.gif" alt="Image 3" style="width: 45%;">
-  </div>
+    <div style="display: flex; justify-content: center;">
+      <img src="/assets/img/DogFighterUAV/flight1.PNG" alt="Image 1" style="width: 45%; margin-right: 3.33%;">
+      <img src="/assets/img/DogFighterUAV/fligth2.gif" alt="Image 2" style="width: 45%;">
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <img src="/assets/img/DogFighterUAV/UAV_tracking.gif" alt="Image 3" style="width: 45%;">
+    </div>
 
   </div>
 
   <!-- Footer -->
   <footer>
     &copy; Copyright 2023 Furkan Çitil.
-    
-    
+
+
   </footer>
 
   <!-- Core JavaScript Files -->
@@ -128,33 +166,36 @@
   <script src="/assets/js/popper.min.js" type="text/javascript"></script>
   <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
-  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   <script src="/assets/js/common.js"></script>
 
   <!-- Scrolling Progress Bar -->
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       var navbarHeight = $('#navbar').outerHeight(true);
       $('body').css({ 'padding-top': navbarHeight });
       $('progress-container').css({ 'padding-top': navbarHeight });
       var progressBar = $('#progress');
       progressBar.css({ 'top': navbarHeight });
-      var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
+      var getMax = function () { return $(document).height() - $(window).height(); }
+      var getValue = function () { return $(window).scrollTop(); }
       // Check if the browser supports the progress element.
       if ('max' in document.createElement('progress')) {
         // Set the 'max' attribute for the first time.
         progressBar.attr({ max: getMax() });
         progressBar.attr({ value: getValue() });
-    
-        $(document).on('scroll', function() {
+
+        $(document).on('scroll', function () {
           // On scroll only the 'value' attribute needs to be calculated.
           progressBar.attr({ value: getValue() });
         });
 
-        $(window).resize(function() {
+        $(window).resize(function () {
           var navbarHeight = $('#navbar').outerHeight(true);
           $('body').css({ 'padding-top': navbarHeight });
           $('progress-container').css({ 'padding-top': navbarHeight });
@@ -164,17 +205,17 @@
         });
       } else {
         var max = getMax(), value, width;
-        var getWidth = function() {
+        var getWidth = function () {
           // Calculate the window width as a percentage.
           value = getValue();
-          width = (value/max) * 100;
+          width = (value / max) * 100;
           width = width + '%';
           return width;
         }
-        var setWidth = function() { progressBar.css({ width: getWidth() }); };
+        var setWidth = function () { progressBar.css({ width: getWidth() }); };
         setWidth();
         $(document).on('scroll', setWidth);
-        $(window).on('resize', function() {
+        $(window).on('resize', function () {
           // Need to reset the 'max' attribute.
           max = getMax();
           setWidth();
@@ -214,7 +255,7 @@
     // $grid.masonry('layout');
 
     // Trigger after images load.
-    $grid.imagesLoaded().progress(function() {
+    $grid.imagesLoaded().progress(function () {
       $grid.masonry({ percentPosition: true });
       $grid.masonry('layout');
     });
@@ -230,4 +271,5 @@
   <!-- Google Analytics -->
 
 </body>
+
 </html>
