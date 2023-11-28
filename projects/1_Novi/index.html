@@ -98,8 +98,9 @@
 
 <p><br /></p>
 
-<div style="text-align: center;">
-  <img src="/assets/img/Novi/poster.jpg" alt="Image 1" style="width: 100%; margin: 0 auto;">
+<div style="text-align: center; position: relative;">
+  <img src="/assets/img/Novi/poster_placeholder.jpg" alt="Loading..." id="placeholder" style="width: 100%; margin: 0 auto;">
+  <img src="/assets/img/Novi/poster.jpg" alt="Image 1" style="width: 100%; margin: 0 auto; position: absolute; top: 0; left: 0; display: none;" onload="this.style.display='block'; document.getElementById('placeholder').style.display='none';">
 </div>
 
   </div>
