@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ5EBTD9EJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GJ5EBTD9EJ');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Furkan Çitil | Long Thin Hauler</title>
+  <meta name="description" content="Personal website of Furkan Çitil.">
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/projects/7_LongThinHauler/">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
+    <div class="container-fluid p-0">
+
+      <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Furkan</span> Çitil</a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/cv/">
+              Resume
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scrolling Progress Bar -->
+  <progress id="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Long Thin Hauler</h1>
+    <h6>This project was developed as part of the <a href="https://capstone.eee.metu.edu.tr/projects-2023-24/" target="_blank">METU EEE Capstone Project</a> (EE493 and EE494 courses) by a team of six senior year METU EEE students. I am grateful for the collaboration and contributions of my team members throughout this challenging and rewarding project.</h6>
+
+    <h6>Accurate position controlling and parking has been a primary challenge in autonomous driving. In this project, we designed a long, forward motion only, and rear wheel drive land vehicle, which can automatically park itself into a previously designated parking spot. Starting at a random position and orientation within a 3m x 3m area, the vehicle identifies the location of the parking spot, which is extruded from the area, and maneuvers itself into the spot within 1 minute, by moving only in the forward direction. As a key member of the development team, I contributed to the system architecture design, created detailed 3D CAD models and mechanical designs, and implemented the visual inertial navigation system that enables precise positioning and parking capabilities.</h6>
+
+    <p><br /></p>
+
+    <h3 id="project-constraints">Project Constraints</h3>
+    <ul>
+        <li>The chassis of the vehicle includes a metallic or metal covered hollow tube of at least 50 cm long</li>
+        <li>The width of the vehicle is between 3 cm and 10 cm</li>
+        <li>The width of the parking spot cannot be larger than 1.5 times the width of the vehicle</li>
+        <li>All sensors are located on the front side of the vehicle, whereas the actuators are on the rear side</li>
+        <li>The distance between the sensors and motion units is at least 30 cm</li>
+        <li>The communication between these units is maintained wirelessly through the hollow tube over a minimum distance of 30 cm</li>
+    </ul>
+
+    <h3 id="system-design">System Design and Implementation</h3>
+    <p>Through careful component selection and cost-effective chassis design, we developed a system that balances performance, weight, and cost. The system architecture integrates six fundamental subsystems: Power, Mechanics, Sensor, Visual Positioning, Controller, and Communication.</p>
+
+    <p>Key specifications:</p>
+    <ul>
+        <li>Dimensions: 9.5 cm (width) × 60.6 cm (length) × 28.4 cm (height)</li>
+        <li>Weight: 2.1 kg</li>
+        <li>Power consumption: 14.7W total (7W front, 7.7W rear)</li>
+    </ul>
+
+    <h4>Subsystem Integration</h4>
+    <p>The following diagram illustrates the relationships and data flow between the different subsystems of the vehicle:</p>
+    <div style="text-align: center; margin: 2em 0;">
+        <img src="/assets/img/LongThinHauler/subsystem_integration.jpg" alt="Subsystem Integration Diagram" style="width: 50%; max-width: 800px; margin-bottom: 1em;">
+    </div>
+
+    <h3 id="mechanical-design">Mechanical Design and CAD Implementation</h3>
+    <p>The mechanical subsystem is designed to support the vehicle's structure and help it move, even with the strict limits of our design goal. I created detailed 3D models and technical drawings using SolidWorks, ensuring all components met the project constraints while maintaining optimal performance. The design process involved iterative optimization of the chassis structure, component placement, and weight distribution.</p>
+
+    <div style="text-align: center; margin: 2em 0;">
+        <img src="/assets/img/LongThinHauler/LongThinHauler3D Design.jpg" alt="3D Design and Dimensions" style="width: 75%; max-width: 800px; margin-bottom: 1em;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/img/LongThinHauler/side_transparent.JPG" alt="Side View" style="width: 100%; margin-bottom: 1em;">
+            </div>
+            <div class="col-md-6">
+                <img src="/assets/img/LongThinHauler/trimetric_transparent.JPG" alt="Trimetric View" style="width: 100%; margin-bottom: 1em;">
+            </div>
+        </div>
+    </div>
+
+    <h4>Component Integration</h4>
+    <p>The vehicle's design separates the sensor and actuation systems, connected by a wireless communication link through the hollow tube. This separation required careful consideration of component placement and wiring to maintain reliable operation.</p>
+    <div style="text-align: center; margin: 2em 0;">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Front Body - Sensor System</h5>
+                <img src="/assets/img/LongThinHauler/frontbody.jpg" alt="Front Body Design" style="width: 100%; margin-bottom: 1em;">
+            </div>
+            <div class="col-md-6">
+                <h5>Rear Body - Actuation System</h5>
+                <img src="/assets/img/LongThinHauler/backbody.jpg" alt="Rear Body Design" style="width: 100%; margin-bottom: 1em;">
+            </div>
+        </div>
+    </div>
+
+    <h3 id="navigation-system">Visual Inertial Navigation System</h3>
+    <p>The navigation system I developed combines visual and inertial sensors to achieve precise positioning and parking capabilities. The system uses a Raspberry PiCam 3 with Aruco markers for visual localization, integrated with IMU data through a custom Kalman filter implementation. This fusion of sensor data enables accurate state estimation and robust navigation even in the presence of measurement noise and outliers.</p>
+
+    <h4>Kalman Filter Implementation</h4>
+    <p>The Kalman filter is a recursive algorithm that estimates the state of a dynamic system from a series of noisy measurements. It is widely used in various applications, including navigation, tracking, and signal processing. The Kalman filter is an optimal estimator in the sense that it minimizes the mean squared error of the estimated state. Consider a discrete-time linear dynamical system described by the following equations:</p>
+
+    $$\begin{align}
+    x_k &= F_k x_{k-1} + B_k u_k + w_k \\
+    z_k &= H_k x_k + v_k
+    \end{align}$$
+
+    <p>where:</p>
+    <ul>
+        <li>\(x_k\) is the state vector at time \(k\)</li>
+        <li>\(F_k\) is the state transition matrix</li>
+        <li>\(B_k\) is the control input matrix</li>
+        <li>\(u_k\) is the control input vector</li>
+        <li>\(w_k\) is the process noise, assumed to be zero-mean Gaussian with covariance \(Q_k\)</li>
+        <li>\(z_k\) is the measurement vector at time \(k\)</li>
+        <li>\(H_k\) is the measurement matrix</li>
+        <li>\(v_k\) is the measurement noise, assumed to be zero-mean Gaussian with covariance \(R_k\)</li>
+    </ul>
+
+    <p>The Kalman filter consists of two main steps: prediction and update. In the prediction step, the Kalman filter uses the previous state estimate and the system dynamics to predict the current state:</p>
+
+    $$\begin{align}
+    \hat{x}_{k|k-1} &= F_k \hat{x}_{k-1|k-1} + B_k u_k \\
+    P_{k|k-1} &= F_k P_{k-1|k-1} F_k^T + Q_k
+    \end{align}$$
+
+    <p>where \(\hat{x}_{k|k-1}\) is the predicted state estimate at time \(k\) given observations up to time \(k-1\), and \(P_{k|k-1}\) is the predicted state covariance. In the update step, the Kalman filter incorporates the current measurement to correct the predicted state estimate using the following dynamic model of the long thin hauler:</p>
+
+    $$\begin{align}
+    p_{x,k} &= p_{x,k-1} + v_{x,k-1} \Delta t \\
+    p_{y,k} &= p_{y,k-1} + v_{y,k-1} \Delta t \\
+    v_{x,k} &= v_{x,k-1} - \Delta v_{x,k}^{bias} + a_{k-1}^{\theta} \Delta v_x - b_{k-1}^{\theta} \Delta v_y \\
+    v_{y,k} &= v_{y,k-1} - \Delta v_{y,k}^{bias} + b_{k-1}^{\theta} \Delta v_x + a_{k-1}^{\theta} \Delta v_y \\
+    \Delta v_{x,k}^{bias} &= \Delta v_{x,k}^{bias} \\
+    \Delta v_{y,k}^{bias} &= \Delta v_{y,k}^{bias} \\
+    a_{k}^{\theta} &= a_{k-1}^{\theta} \\
+    b_{k}^{\theta} &= b_{k-1}^{\theta} 
+    \end{align}$$
+
+    <p>where \(K_k\) is the Kalman gain, \(\hat{x}_{k|k}\) is the updated state estimate at time \(k\) given observations up to time \(k\), and \(P_{k|k}\) is the updated state covariance.</p>
+
+    <p>The Kalman filter can be implemented recursively by repeating the prediction and update steps for each new measurement. The initial state estimate \(\hat{x}_{0|0}\) and covariance \(P_{0|0}\) need to be specified based on prior knowledge or set to reasonable values. In order incorporate with Kalman filter, dynamic motion of the long thin hauler is modeled with constant velocity. In this regard, we get the following matrices:</p>
+
+    $$\begin{align}
+    F_k = \begin{bmatrix} 
+        1 & 0 & \Delta t & 0 & 0 & 0 & 0 & 0 \\ 
+        0 & 1 & 0 & \Delta t & 0 & 0 & 0 & 0 \\ 
+        0 &  0 &  1 &  0 &  -1 & 0 &  \Delta v_x & -\Delta v_y \\
+        0 & 0 & 0 & 1 & 0 & -1 & \Delta v_x & \Delta v_x \\
+        0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+    \end{bmatrix}
+    \end{align}$$
+
+    $$\begin{align}
+    H = \begin{bmatrix}
+    1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+    0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+    0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\ 
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\ 
+    \end{bmatrix}
+    \end{align}$$
+
+    $$\begin{align}
+    Q = diag([\sigma_x, \sigma_y, \sigma_{v_x}, \sigma_{v_y}, \sigma_{\Delta v_x^{bias}}, \sigma_{\Delta v_y^{bias}}, \sigma_{a_{\theta}}, \sigma_{b_{\theta}}])
+    \end{align}$$
+
+    $$\begin{align}
+    R = diag([\sigma_{x}^{meas}, \sigma_{y}^{meas}, \sigma_{a_{\theta}}^{meas}, \sigma_{b_{\theta}}^{meas}])
+    \end{align}$$
+
+    <h4>Outlier Detection and Robustness</h4>
+    <p>Also, in order to eliminate the effect of outliers in the measurement, Mahalanobis distance metric has been employed as a gating mechanism. The Mahalanobis distance is a multi-dimensional generalization of the idea of measuring how many standard deviations away a point is from the mean of a distribution. In the context of the our kalman filter implementation for long thin hauler, the Mahalanobis distance is used to measure how far the current measurement \(z_k\) is from the predicted measurement \(H_k \hat{x}_{k|k-1}\), taking into account the covariance of the predicted measurement. Specifically,the Mahalanobis distance \(d_k\) is calculated as:</p>
+
+    $$\begin{align}
+    \nu_k &= z_k - H_k \hat{x}_{k|k-1} \\
+    S_k &= H_k P_{k|k-1} H_k^T + R_k \\
+    d_k &= \sqrt{\nu_k^T S_k^{-1} \nu_k}
+    \end{align}$$
+
+    <p>where:</p>
+    <ul>
+        <li>\(\nu_k\) is the measurement residual, which is the difference between the actual measurement \(z_k\) and the predicted measurement \(H_k \hat{x}_{k|k-1}\).</li>
+        <li>\(S_k\) is the covariance of the predicted measurement, which is calculated as \(H_k P_{k|k-1} H_k^T + R_k\), where \(P_{k|k-1}\) is the predicted state covariance, and \(R_k\) is the measurement noise covariance.</li>
+        <li>\(S_k^{-1}\) is the inverse of the predicted measurement covariance matrix.</li>
+    </ul>
+
+    <p>If the Mahalanobis distance \(d_k\) exceeds a predefined threshold \(\beta\), it means that the current measurement is an outlier and deviates significantly from the expected value based on the predicted state and covariance. In such cases, the update step of the Kalman filter is skipped, and the algorithm proceeds to the next measurement. This helps to make the Kalman filter more robust to outliers and prevent them from corrupting the state estimates.</p>
+
+    <p>The threshold \(\beta\) is typically chosen based on the desired trade-off between robustness to outliers and the ability to track sudden changes in the system dynamics. A larger value of \(\beta\) makes the filter more tolerant to outliers but may also make it less responsive to sudden changes in the system state.</p>
+
+    <h4>Algorithm Implementation</h4>
+    <p>The implementation of our Kalman filter design is completed as follows:</p>
+
+    <pre><code class="python">
+# Initialize state estimate and covariance
+x_hat = x_hat_0
+P = P_0
+
+# Define system matrices
+F = F_k
+H = H_k
+Q = Q_k
+R = R_k
+
+# Set Mahalanobis distance threshold
+beta = beta_threshold
+
+for each new measurement z_k:
+    # Prediction step
+    x_hat_pred = F @ x_hat
+    P_pred = F @ P @ F.T + Q
+    
+    # Calculate Mahalanobis distance
+    nu = z_k - H @ x_hat_pred
+    S = H @ P_pred @ H.T + R
+    d = sqrt(nu.T @ inv(S) @ nu)
+    
+    if d > beta:
+        # Skip update step and proceed to next measurement
+        continue
+    else:
+        # Update step
+        K = P_pred @ H.T @ inv(S)
+        x_hat = x_hat_pred + K @ nu
+        P = (I - K @ H) @ P_pred
+    </code></pre>
+
+    <h3 id="system-integration">System Integration and Testing</h3>
+    <p>The final implementation demonstrates successful integration of all subsystems, with the navigation system enabling precise parking maneuvers within the project constraints.</p>
+    <div style="text-align: center; margin: 2em 0;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/img/LongThinHauler/assembled_vehicle.jpg" alt="Final Assembly" style="width: 100%; margin-bottom: 1em;">
+                <p>Final manufactured version of the vehicle</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/assets/img/LongThinHauler/parking_area.jpeg" alt="Testing Area" style="width: 100%; margin-bottom: 1em;">
+                <p>Vehicle during operation in testing area</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Package -->
+    <div style="text-align: center; margin: 2em 0;">
+        <h4>Project Package</h4>
+        <img src="/assets/img/LongThinHauler/package.jpg" alt="Project Package" style="width: 75%; max-width: 800px; margin-bottom: 1em;">
+        <p>Complete project package contents</p>
+    </div>
+
+    <!-- Project Video -->
+    <div style="text-align: center; margin: 2em 0;">
+        <h4>Project Demo Video</h4>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    src="https://www.youtube.com/embed/eO5V38-EW_w" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Project Poster -->
+    <div style="text-align: center; margin: 2em 0;">
+        <h4>Project Poster</h4>
+        <embed src="/assets/pdf/poster.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+
+    <!-- Project Report -->
+    <div style="text-align: center; margin: 2em 0;">
+        <h4>Final Project Report</h4>
+        <p>The complete project report detailing the design process, implementation, and results can be found in the final report:</p>
+        <a href="/assets/pdf/BeyondTech_Final.pdf" target="_blank" class="btn btn-primary" style="margin: 1em 0;">
+            <i class="fas fa-file-pdf"></i> View Final Report
+        </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Copyright 2024 Furkan Çitil.
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/mdb.min.js" type="text/javascript"></script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        packages: ['base', 'ams', 'noerrors', 'noundefined']
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      }
+    };
+  </script>
+  <script src="/assets/js/common.js"></script>
+
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      var progressBar = $('#progress');
+      progressBar.css({ 'top': navbarHeight });
+      var getMax = function () { return $(document).height() - $(window).height(); }
+      var getValue = function () { return $(window).scrollTop(); }
+      if ('max' in document.createElement('progress')) {
+        progressBar.attr({ max: getMax() });
+        progressBar.attr({ value: getValue() });
+
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getValue() });
+        });
+
+        $(window).resize(function () {
+          var navbarHeight = $('#navbar').outerHeight(true);
+          $('body').css({ 'padding-top': navbarHeight });
+          $('progress-container').css({ 'padding-top': navbarHeight });
+          progressBar.css({ 'top': navbarHeight });
+          progressBar.attr({ max: getMax(), value: getValue() });
+        });
+      } else {
+        var max = getMax(), value, width;
+        var getWidth = function () {
+          value = getValue();
+          width = (value / max) * 100;
+          width = width + '%';
+          return width;
+        }
+        var setWidth = function () { progressBar.css({ width: getWidth() }); };
+        setWidth();
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function () {
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+  </script>
+
+  <!-- Code Syntax Highlighting -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Enable Tooltips -->
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <!-- Add this style to ensure proper math rendering -->
+  <style>
+    .MathJax {
+      font-size: 1.1em;
+    }
+    .MathJax_Display {
+      margin: 1em 0;
+    }
+  </style>
+</body>
+
+</html> 
